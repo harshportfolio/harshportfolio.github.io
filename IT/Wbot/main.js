@@ -23,11 +23,11 @@ var messages = [], //array that hold the record of each string in chat
 //edit this function to change what the chatbot says
 function chatbotResponse() {
   talking = true;
-  botMessage = 'Dear, I request you to please coordinate with me through <a style="color:yellow;" href="mailto:harshbhavsar29897@gmail.com">email</a> or <a style="color:yellow;" href="tel:+91 7046993361">phone call</a> to assist you better.<br>Thank you.'; //the default message
+  botMessage = 'Dear, I request you to please coordinate with me through email or phone call to assist you better. Thank you.'; 
 
   if (true === /\bhi\b/i.test(lastUserMessage) || true === /hello/i.test(lastUserMessage) || true === /hey/i.test(lastUserMessage)) {
     const hi = ['Hi','Hello','Hey']
-    botMessage =''+ hi[Math.floor(Math.random()*(hi.length))] + ' \n Dear, How can I help you? <img class="welcome-img2" src="https://summa.es/blog/wp-content/uploads/2015/05/c4a06cc86a1a67110c73b416b1db9be9.gif">';
+    botMessage =''+ hi[Math.floor(Math.random()*(hi.length))] + ' \n Dear, How can I help you?';
   }
 
   if (true === /your name/i.test(lastUserMessage) || true === /\bwho\b/i.test(lastUserMessage)) {
@@ -44,7 +44,7 @@ function chatbotResponse() {
 
   if(true === /\blooking for\b/i.test(lastUserMessage) || true === /\bi want\b/i.test(lastUserMessage)|| true === /\bservices\b/i.test(lastUserMessage))
   {
-    botMessage = 'I am providing <a style="color:yellow;" href="https://www.silverwingtechnologies.com/web/150120116024/">Web Designing</a>, <a style="color:yellow;" href="https://www.silverwingtechnologies.com/web/150120116024/">Web Development</a>, and <a style="color:yellow;" href="https://www.silverwingtechnologies.com/web/150120116024/">Content Writing</a> services'+". ";
+    botMessage = 'I am providing Web Designing, Web Development, and Content Writing services'+". ";
   }
 
   if(true === /\bBye\b/i.test(lastUserMessage) || true === /\bTalk to you later\b/i.test(lastUserMessage))
