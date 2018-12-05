@@ -15,13 +15,13 @@ $html=
 //$path VARIBALE STORES THE PATH OF IMAGE TEMPLATE.
   $path = '..\cards\3.jpg';
 //SPECIFYING X-Y COORDINATES FOR TEXT STRING
-  $x1_h = 30;   $y1_h = 80;
-  $x2_h = 30;   $y2_h = 100;
-  $x3_h = 30;   $y3_h = 120;
-  $x4_h = 30;   $y4_h = 160;
-  $x5_h = 90;   $y5_h = 160;
-  $x6_h = 90;   $y6_h = 180;
-  $x7_h = 90;   $y7_h = 200;
+  $x1_h = 30;   $y1_h = 120;
+  $x2_h = 30;   $y2_h = 140;
+  $x3_h = 30;   $y3_h = 160;
+  $x4_h = 30;   $y4_h = 200;
+  $x5_h = 90;   $y5_h = 200;
+  $x6_h = 90;   $y6_h = 220;
+  $x7_h = 90;   $y7_h = 240;
   
   $font = 'trebuchet-ms.ttf';
   if(isset($_POST['submit'])){
