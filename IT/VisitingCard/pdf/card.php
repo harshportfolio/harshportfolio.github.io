@@ -44,7 +44,7 @@ $html=
         imagettftext($image, 12, 0, $x5_h, $y5_h, $black, $font, $string5);
         imagettftext($image, 12, 0, $x6_h, $y6_h, $black, $font, $string6);
         imagettftext($image, 12, 0, $x7_h, $y7_h, $black, $font, $string7);
-        $imagename="abc";
+        $imagename="visiting_card";
         $image1.= '<img class="side" style="width:100%" src="../cardsGenerated/'.$imagename.'.jpg"><br/><br/><br/><br/><br/><br/>';
         imagejpeg($image,  $fileName = "..\cardsGenerated\\$imagename.jpg", $quality = 100);
 }
@@ -52,7 +52,10 @@ $html.=$image1;
 $html.='</center>
 </body>
 </html>';
+header('Location: card.html'); 
+
 $mpdf->WriteHTML($html);
 $mpdf->Output();
 exit;
+
 ?>
